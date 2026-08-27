@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peddakotla Adarsh Kumar Reddy — Portfolio</title>
+<meta name="description" content="Portfolio of Peddakotla Adarsh Kumar Reddy — CSE student focused on AI, Machine Learning and Data Analytics.">
+
+<!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR / SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-bracket">&lt;</span>Adarsh<span class="nav-logo-bracket">/&gt;</span>
+      <span class="nav-cursor">_</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link nav-link-cta">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <canvas id="networkCanvas" class="hero-canvas"></canvas>
+
+  <div class="hero-inner container">
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <p class="eyebrow">// currently compiling a career in AI &amp; data</p>
+        <h1 class="hero-title">
+          Peddakotla<br>
+          Adarsh Kumar Reddy
+        </h1>
+        <p class="hero-role">
+          <span class="typewriter" id="typewriter"></span><span class="type-cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          Computer Science Engineering student who turns raw data into decisions.
+          I build with Python, machine learning and data analytics — chasing patterns
+          in surveillance footage, health records and cricket scoreboards alike.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-diagram-project"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-regular fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/adarsh-kumar-reddy-peddakotla/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/P-Adarsh" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:peddakotlaadarshkumarreddy@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-avatar" id="heroAvatar">
+          <img
+            id="profileImage"
+            class="hero-avatar-img"
+            src="https://cdn.phototourl.com/free/2026-08-27-1e57401c-4fd7-4205-8561-af881563508d.jpg"
+            alt="Peddakotla Adarsh Kumar Reddy"
+          >
+          <div id="profileFallback" class="hero-avatar-fallback">PA</div>
+          <span class="hero-avatar-badge"><i class="fa-solid fa-bolt"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll down">
+    <span>scroll</span>
+    <i class="fa-solid fa-arrow-down"></i>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="eyebrow reveal">// 01 — about</p>
+    <h2 class="section-title reveal">About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a final-year Computer Science Engineering student with a genuine curiosity
+          for how data becomes insight, and how insight becomes something useful. My work
+          sits at the intersection of <strong>machine learning</strong>, <strong>data analytics</strong>
+          and practical software engineering — I like problems that start messy and end explainable.
+        </p>
+        <p>
+          Across my projects I've handled the full pipeline: cleaning and exploring data,
+          engineering features, training and evaluating models, and packaging results into
+          something a non-technical reader can act on. I care about rigor as much as results —
+          confusion matrices and cross-validation aren't afterthoughts, they're how I know a
+          model earned its conclusions.
+        </p>
+        <p>
+          Outside of models and notebooks, I'm drawn to automation and the small tools that
+          quietly save people time. I'm currently looking for a role where I can apply that
+          same analytical, problem-first mindset to real data-driven software.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">7.93</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">ML Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-terminal reveal">
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">about.py</span>
+          </div>
+          <div class="terminal-body">
+<pre><span class="tk-key">class</span> <span class="tk-class">Adarsh</span>:
+    <span class="tk-key">def</span> <span class="tk-fn">__init__</span>(self):
+        self.name = <span class="tk-str">"Peddakotla Adarsh Kumar Reddy"</span>
+        self.role = <span class="tk-str">"CSE Student"</span>
+        self.focus = [<span class="tk-str">"AI"</span>, <span class="tk-str">"ML"</span>,
+                      <span class="tk-str">"Data Analytics"</span>]
+        self.education = <span class="tk-str">"2022 – 2026"</span>
+        self.languages = [<span class="tk-str">"English"</span>, <span class="tk-str">"Telugu"</span>,
+                           <span class="tk-str">"Hindi"</span>]
+
+    <span class="tk-key">def</span> <span class="tk-fn">status</span>(self):
+        <span class="tk-key">return</span> <span class="tk-str">"open to opportunities"</span>
+</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <p class="eyebrow reveal">// 02 — skills</p>
+    <h2 class="section-title reveal">Skills &amp; Toolkit</h2>
+    <p class="section-sub reveal">The languages, concepts and tools I reach for most.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Programming Languages</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">Java</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>Core Concepts</h3>
+        <div class="tag-row">
+          <span class="tag">Data Structures</span>
+          <span class="tag">OOP</span>
+          <span class="tag">DBMS</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Data Analytics</h3>
+        <div class="tag-row">
+          <span class="tag">Tableau</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+        <h3>Tools</h3>
+        <div class="tag-row">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Jupyter Notebook</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <p class="eyebrow reveal">// 03 — projects</p>
+    <h2 class="section-title reveal">Selected Projects</h2>
+    <p class="section-sub reveal">A few builds where data had to earn its conclusions.</p>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal" style="--accent: var(--c-teal);">
+        <div class="project-top">
+          <i class="fa-solid fa-user-magnifying-glass"></i>
+          <span class="project-tag">Computer Vision</span>
+        </div>
+        <h3>Missing Person Detection System</h3>
+        <p>
+          An image recognition pipeline built with Python and OpenCV to identify
+          missing persons from surveillance footage.
+        </p>
+        <ul class="project-points">
+          <li>Image preprocessing &amp; feature extraction to boost classification accuracy</li>
+          <li>Evaluated with confusion matrix, precision, recall and F1-score</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag-sm">Python</span>
+          <span class="tag tag-sm">OpenCV</span>
+          <span class="tag tag-sm">Machine Learning</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/P-Adarsh/Missing-person-detection" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent: var(--c-coral);">
+        <div class="project-top">
+          <i class="fa-solid fa-baseball-bat-ball"></i>
+          <span class="project-tag">Regression</span>
+        </div>
+        <h3>IPL Score Prediction System</h3>
+        <p>
+          A regression model that predicts IPL match scores from historical
+          cricket data.
+        </p>
+        <ul class="project-points">
+          <li>Statistical analysis and data preprocessing to sharpen accuracy</li>
+          <li>Dashboards that surface analytical insight through visualization</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag-sm">Python</span>
+          <span class="tag tag-sm">Regression</span>
+          <span class="tag tag-sm">Data Viz</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/P-Adarsh/IPL_mini_project" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent: var(--c-amber);">
+        <div class="project-top">
+          <i class="fa-solid fa-hospital"></i>
+          <span class="project-tag">Data Analytics</span>
+        </div>
+
+        <h3>Hospital Emergency Room Analysis</h3>
+
+        <p>
+          A data analytics project focused on analyzing Emergency Room patient data
+          to evaluate hospital performance, patient flow, and service quality.
+        </p>
+
+        <ul class="project-points">
+          <li>
+            Performed data cleaning, preparation, feature engineering, and outlier detection
+            using IQR and Z-Score methods.
+          </li>
+          <li>
+            Developed KPIs and dashboards to analyze patient wait times, admission rates,
+            satisfaction, and department performance.
+          </li>
+        </ul>
+
+        <div class="tag-row">
+          <span class="tag tag-sm">Excel</span>
+          <span class="tag tag-sm">Pivot Tables</span>
+          <span class="tag tag-sm">Data Analysis</span>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/P-Adarsh/Hospital-ER-Analysis"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github"></i> Repository
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section section-alt" id="education">
+  <div class="container">
+    <p class="eyebrow reveal">// 04 — education</p>
+    <h2 class="section-title reveal">Education Timeline</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2022 — 2026</span>
+          <h3>B.Tech in Computer Science Engineering</h3>
+          <p>Kalasalingam Academy of Research and Education</p>
+          <span class="timeline-badge">CGPA: 7.93</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2020 — 2022</span>
+          <h3>Intermediate (MPC)</h3>
+          <p>NRI Junior College</p>
+          <span class="timeline-badge">74.8%</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2019 — 2020</span>
+          <h3>SSC</h3>
+          <p>Sri Imam Shareef School</p>
+          <span class="timeline-badge">99.5%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section" id="certifications">
+  <div class="container">
+    <p class="eyebrow reveal">// 05 — certifications</p>
+    <h2 class="section-title reveal">Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-code-branch"></i>
+        <h3>Java Full Stack Developer</h3>
+        <p>TalentNext Digital Skills Readiness Program — Wipro</p>
+      </div>
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-cloud"></i>
+        <h3>Oracle Cloud Infrastructure 2025</h3>
+        <p>Certified Foundations Associate</p>
+      </div>
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>CyberSecurity Job Simulation</h3>
+        <p>Deloitte — via Forage</p>
+      </div>
+      <div class="cert-card reveal">
+        <i class="fa-solid fa-chart-pie"></i>
+        <h3>Data Visualization Virtual Experience</h3>
+        <p>Tata Group — via Forage</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <p class="eyebrow reveal">// 06 — contact</p>
+    <h2 class="section-title reveal">Let's Build Something</h2>
+    <p class="section-sub reveal">
+      Have a role, a project, or just a question about one of my builds? My inbox is open.
+    </p>
+
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a little about the opportunity or project..." required></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-regular fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i> Thanks! Your message has been queued — I'll reply soon.
+        </p>
+      </form>
+
+      <div class="contact-info reveal">
+        <div class="contact-info-card">
+          <h3>Direct Contact</h3>
+          <a href="mailto:peddakotlaadarshkumarreddy@gmail.com" class="contact-line">
+            <i class="fa-regular fa-envelope"></i> peddakotlaadarshkumarreddy@gmail.com
+          </a>
+          <a href="tel:+916305875055" class="contact-line">
+            <i class="fa-solid fa-phone"></i> +91-6305875055
+          </a>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>Find Me Online</h3>
+          <a href="https://www.linkedin.com/in/adarsh-kumar-reddy-peddakotla/" target="_blank" rel="noopener" class="contact-line">
+            <i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/adarsh
+          </a>
+          <a href="https://github.com/P-Adarsh" target="_blank" rel="noopener" class="contact-line">
+            <i class="fa-brands fa-github"></i> github.com/adarsh
+          </a>
+        </div>
+
+        <div class="contact-cta">
+          <p>Open to roles in AI, ML and Data Analytics — full-time or internship.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">© <span id="year"></span> Peddakotla Adarsh Kumar Reddy. All rights reserved.</p>
+
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/adarsh-kumar-reddy-peddakotla/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/P-Adarsh" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:peddakotlaadarshkumarreddy@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
